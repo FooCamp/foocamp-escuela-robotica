@@ -1,5 +1,5 @@
 {
-  "name": "foocamp-transformasion",
+  "name": "foocamp-escuela-robotica",
   "version": "1.0.0",
   "scripts": {
     "stacy:serve": "stacy serve",
