@@ -1,3 +1,68 @@
-.header {
-  height: 90px;
+@mixin  fontStyle ($color, $fontSize) {
+    color: $color;
+    font-size: $fontSize;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    background: #FFFFFF;
+    padding: 30px 90px 30px 80px;
+}
+
+li, a, .btn {
+    @include fontStyle(#2c8eff, 16px);
+    line-height: 18px;
+    text-decoration: none;
+}
+
+
+.logo img {
+    position: absolute;
+    top: 12px;
+    left: 80px;
+    width: 42px;
+    height: 45px;
+}
+
+.logo p {
+    position: absolute;
+    @include fontStyle(#002D62, 14px);
+    line-height: 16px;
+    left: 134px;
+    top: 32px;
+}
+
+
+
+.nav__links {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding-left: 30px;
+    }
+
+   
+
+    li .btn {
+        background-color: #F6BF42;
+        padding: 11px 42px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: #FFFFFF;
+    }
+
+}
+
