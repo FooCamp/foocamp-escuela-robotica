@@ -1,0 +1,34 @@
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    &__text{
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        color: #577598;
+        margin-top: 47px;
+        text-align: center;
+        width: 736px;
+        height: 68px;
+
+    }
+
+    &__author{
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #8894B4;
+        margin-top:24px;
+        margin-bottom: 39px;
+    }
+}
+ 
