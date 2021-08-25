@@ -1,0 +1,35 @@
+.projects {
+    display: flex;
+    align-items: center;
+}
+
+.projects-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.0588235);
+    border-radius: 29px;
+    width: 411px;
+    height: 470px;
+    margin-left: 24px;
+}
+
+.project-img {
+    width: 411px;
+    height: 230px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.project-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #37474F;
+}
+
+.project-descr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(55, 71, 79, 0.721569);
+    font-weight: 400;
+}
