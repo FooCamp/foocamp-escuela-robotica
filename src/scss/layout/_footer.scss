@@ -1,11 +1,12 @@
 .footer{
-    background-color: #577598;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    background-color:var(--footer_background);
     height: 461px;
-    margin: auto;
 
-    
+    &__container{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
     &__section{
         display: flex;
         flex-direction: column;
@@ -19,20 +20,15 @@
     &__logo{
         height: 121px;
         width: 68px;
-        margin: 74px 0px 25px 80px;
+        margin: 74px 0 25px 80px;
         border-radius: 8px;
     }
 
     &__title{
+        @include fontStyle(var(--white),30px);
         width: 218px;
         height: 108px;
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 34px;
-        color: #FFFFFF;
-        margin: 80px 0px 32px 17px;
+        margin: 80px 0 32px 17px;
     }
 
     &__social-icon{
@@ -40,18 +36,15 @@
     }
 
     &__section--margin{
-        margin: 0px 0px 25px 80px;
+        margin: 0 0 25px 80px;
     }
 
     &__paragraph{
+        @include fontStyle(var(--white),16px);
         width: 302px;
         height: 117px;
-        font-family: Helvetica;
-        font-style: normal;
         font-weight: normal;
-        font-size: 16px;
         line-height: 18px;
-        color: #FFFFFF;
     }
 
     &__paragraph--bold{
@@ -59,45 +52,35 @@
     }
 
     &__subtitles{
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
+        @include fontStyle(var(--white),18px);
         line-height: 24px;
-        color: #FFFFFF;
-        margin: 74px 0px 16px 0px;
+        margin: 74px 0 16px 0;
     }
 
     &__links{
+        @include fontStyle(var(--white),14px);
         padding: 5px 3px;
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
         line-height: 16px;
-        color: #FFFFFF;
         margin-bottom: 25px;
     }
 
     &__button{
+        @include fontStyle(var(--button_content),24px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 300px;
         height: 60px;
-        background: #F6BF42;
+        background:var(--footer_button);
         border-radius: 60px;
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
         line-height: 28px;
-        text-align: center;
-        color: #2C8EFF;
         border-style: none;
         margin-bottom: 44px;
     }
 
     &__image{
-        width: 26.05px;
-        height: 18.36px;
+        width: 26px;
+        height: 19px;
         margin-right: 13px;
         
         img{
@@ -113,3 +96,19 @@
     }
 
 }
+
+@media(max-width:1023px){
+    .footer{
+        height: auto;
+        
+        &__section:not(.footer__section--logo){
+            padding-left: 80px;
+        }
+
+        &__container{
+            grid-template-columns: auto;
+        }
+    }
+}
+
+

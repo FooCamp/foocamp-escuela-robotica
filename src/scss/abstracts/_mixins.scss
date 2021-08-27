@@ -20,3 +20,12 @@ $breakpoints: (
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+@mixin  fontStyle ($color, $fontSize) {
+  color: $color;
+  font-size: $fontSize;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+}
+

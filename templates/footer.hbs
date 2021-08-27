@@ -1,16 +1,17 @@
     <footer class="footer">
-            <div>
-                <div class="footer__section footer__section--row">
+        <div class="footer__container component">
+            <div class="footer__section footer__section--logo">
+                <div class="footer__section--row">
                     <img class="footer__logo" src="{{assetSrc schoolLogo}}" alt="Logo escuela de robotica del choco">
                     <h2 class="footer__title">{{schoolTitle}}</h2>
                 </div>
-                <div class="footer__section footer__section--row footer__section--margin">
+                <div class="footer__section--row footer__section--margin">
                     <a class="footer__social-icon" href="#">{{{asset facebookLogo}}}</a>
                     <a class="footer__social-icon" href="#">{{{asset twitterLogo}}}</a>
                     <a class="footer__social-icon" href="#">{{{asset youtubeLogo}}}</a>
                     <a class="footer__social-icon" href="#">{{{asset instagramLogo}}}</a>
                 </div>
-                <div class="footer__section footer__section--margin">
+                <div class="footer__section--margin">
                     <p class="footer__paragraph">{{footerParagraph}}</p>
                     <p class="footer__paragraph footer__paragraph--bold">{{paragraphAutor}}</p>
                 </div>
@@ -23,8 +24,8 @@
             </div>
             <div class="footer__section">
                 <h2 class="footer__subtitles">{{discoverHowToSupport}}</h2>
-                <button class="footer__button" href="">{{donationsButton}}</button>
-                <div class="footer__section">
+                <a class="footer__button" href="#">{{donationsButton}}</a>
+                <div class="footer__section__links">
                     <a href="#" class="footer__links footer__links--row">
                         <div class="footer__image">
                             <img src="{{assetSrc footerEmailIcon}}" alt="">
@@ -55,4 +56,5 @@
                     </a>
                 </div>
             </div>
+        </div>    
     </footer>
