@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0rem 1rem 2.5rem 1rem;
+        padding: 0 1rem 2.5rem 1rem;
 
         @include breakpoint('md') {
             display: grid;
@@ -30,7 +30,7 @@
 
     &__card {
         background: var(--white);
-        box-shadow: 0px 4px 4px var(--gray-shadow);
+        box-shadow: 0 4px 4px var(--gray-shadow);
         border-radius: 16px;
         max-width: 360px;
         min-height: 440px;
@@ -46,14 +46,14 @@
     &__img {
         width: 100%;
         height: 230px;
-        border-radius: 16px 16px 0px 0px;
+        border-radius: 16px 16px 0 0;
         object-fit: fill;
     }
 
     &__title {
         @include fontStyle(var(--waikawa-gray), 20px);
         line-height: 23px;
-        padding: 2.2rem 1.5rem 0.5rem 1.5rem;
+        padding: 2.2rem 1.5rem .5rem 1.5rem;
         width: 100%;
     }
 
@@ -80,6 +80,6 @@
         line-height: 18px;
         align-items: center;
         justify-content: center;
-        padding: 0.7rem 2.2rem;
+        padding: .7rem 2.2rem;
     }
 }
