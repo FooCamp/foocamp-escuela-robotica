@@ -5,6 +5,7 @@
 .slider {
   display: flex;
   flex-wrap: nowrap;
+  transition: .7s ease;
 }
 
 .slide {
