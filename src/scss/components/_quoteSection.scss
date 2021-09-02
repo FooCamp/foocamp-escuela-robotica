@@ -6,13 +6,9 @@
     max-width: 100%;
     
     &__text{
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
+        @include fontStyle(var(--quote_text),24px);
         line-height: 28px;
         display: flex;
-        color: var(--quote_text);
         margin-top: 47px;
         text-align: center;
         width: 736px;
@@ -20,12 +16,9 @@
     }
 
     &__author{
-        font-family: Helvetica;
-        font-style: normal;
-        font-weight: bold;
+        @include fontStyle(var(--quote_author),20px);
         font-size: 20px;
         line-height: 23px;
-        color: var(--quote_author);
         margin-top:24px;
         margin-bottom: 39px;
     }
