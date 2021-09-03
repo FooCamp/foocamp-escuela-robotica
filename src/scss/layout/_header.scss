@@ -1,24 +1,21 @@
-@mixin  fontStyle ($color, $fontSize) {
-    color: $color;
-    font-size: $fontSize;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     background: #FFFFFF;
-    padding: 30px 90px 30px 80px;
+    padding: 31px 80px 31px 90px;
 }
 
 li, a, .btn {
@@ -27,24 +24,24 @@ li, a, .btn {
     text-decoration: none;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 .logo img {
-    position: absolute;
-    top: 12px;
-    left: 80px;
-    width: 42px;
-    height: 45px;
+    margin-top: -3px;
+    width: 41.2px;
+    height: 44.47px;
 }
 
 .logo p {
-    position: absolute;
     @include fontStyle(#002D62, 14px);
     line-height: 16px;
-    left: 134px;
-    top: 32px;
+    margin-left: 12.8px;
+    margin-top: 2px;
+    margin-bottom: 0px;
 }
-
-
 
 .nav__links {
     list-style: none;
@@ -54,8 +51,6 @@ li, a, .btn {
         padding-left: 30px;
     }
 
-   
-
     li .btn {
         background-color: #F6BF42;
         padding: 11px 42px;
@@ -63,6 +58,4 @@ li, a, .btn {
         cursor: pointer;
         border: #FFFFFF;
     }
-
 }
-

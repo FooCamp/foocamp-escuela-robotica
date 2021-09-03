@@ -13,8 +13,13 @@
   </head>
   <body>
     {{!-- Header goes here --}}
-
+    
     <main>
+      {{#each header}}
+        {{{module this}}}
+        
+      {{/each}}
+
       {{#each components}}
         {{{module this}}}
       {{/each}}
