@@ -1,9 +1,10 @@
 <section class="allies">
     <h2>{{alliesTitle}}</h2>
-    <div class="single">
-        <img src={{assetSrc pygmalionLogo}} alt="Logo de Pygmalion">
+    
+    <div class="allies_logos">
+        {{#each alliesLogos}}
+            <img src="image/{{Assets}}.png">
+        {{/each}}
     </div>
-    <div class="single">
-        <img src={{alliesLogos}} alt="Logo de Pygmalion">
-    </div>
+    
 </section>
