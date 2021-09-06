@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background: #FFFFFF;
+    background-color: var(--white);
     padding: 31px 80px 31px 90px;
 }
 
@@ -56,6 +56,6 @@ li, a, .btn {
         padding: 11px 42px;
         border-radius: 30px;
         cursor: pointer;
-        border: #FFFFFF;
+        border: var(--white);
     }
 }
