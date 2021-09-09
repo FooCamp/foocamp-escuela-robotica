@@ -1,31 +1,8 @@
 <section class="allies">
-    <h2>{{alliesTitle}}</h2>
-    
-    {{!-- <div class="allies_logos">
-        <img src="{{assetSrc allieLogo}}">
-    </div> --}}
-    
-    {{!-- <div>
-        {{#each alliesLogos}}
-            <img src="{{assetSrc alliesLogos}}">
-        {{/each}}
-    </div> --}}
-
-    {{!-- <div>
-        {{#each alliesHome}}
-            <img src="{{assetSrc Asset alliesLogos}}">
-        {{/each}}
-    </div> --}}
-
-    {{!-- <div>
-        {{#each alliesHome}}
-            <img src="Image/{{alliesLogo}}.png" alt="">
-        {{/each}}
-    </div> --}}
-
-    {{!-- <div>
-        {{#each alliesHome}}
-            <img src="{{asset alliesLogos}}" alt="">
-        {{/each}}
-    </div> --}}
+  <h2 class="allies__title">{{alliesTitle}}</h2>
+  <div class="allies__cards">
+  {{#each allyImages}}
+    {{{module this}}}
+  {{/each}}
+  </div>  
 </section>
