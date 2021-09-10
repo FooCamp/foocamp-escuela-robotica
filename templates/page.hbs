@@ -13,6 +13,14 @@
   </head>
   <body>
 
+    <main>
+      {{#each components}}
+        {{{module this}}}
+      {{/each }}
+    </main>
+
     <script src="main.bundle.js"></script>
+    
+    
   </body>
 </html>
