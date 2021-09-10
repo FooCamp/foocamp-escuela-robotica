@@ -14,6 +14,7 @@
         align-items: center;
         padding: 0 5.2rem 2.3rem 5.2rem;
         margin-left: 0;
+        gap: 2.7rem 2rem;
 
         @include breakpoint('md') {
             display: grid;
@@ -32,12 +33,12 @@
     }
 
     &__card {
+        
         background: var(--white);
         box-shadow: 0 4px 4px var(--gray-shadow);
         border-radius: 16px;
         max-width: 360px;
         min-height: 440px;
-        //margin: 2rem 3rem 2rem 0;
         
         &--centered-content {
             display: flex;
@@ -81,6 +82,6 @@
         @include fontStyle(var(--dodger-blue), 16px);
         @extend %button;
         padding: 0.8rem 2.2rem;
-        margin-top: 1.6rem;
+        //margin-top: 1.6rem;
     }
 }
