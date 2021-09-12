@@ -4,12 +4,7 @@
     padding: 0;
 }
 
-body{
-    max-width: 1440px;
-    margin: auto;
-}
-
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,32 +13,32 @@ header {
     padding: 31px 80px 31px 90px;
 }
 
-li, a, .btn {
-    @include fontStyle(#2c8eff, 16px);
+li, a, .header__btn {
+    @include fontStyle( var(--fontcolor), 16px);
     line-height: 18px;
     text-decoration: none;
 }
 
-.logo {
+.header__logo {
     display: flex;
     align-items: center;
 }
 
-.logo img {
+.header__logo img {
     margin-top: -3px;
     width: 41.2px;
     height: 44.47px;
 }
 
-.logo p {
-    @include fontStyle(#002D62, 14px);
+.header__logo p {
+    @include fontStyle(var(--fontcolorlogo), 14px);
     line-height: 16px;
     margin-left: 12.8px;
     margin-top: 2px;
     margin-bottom: 0px;
 }
 
-.nav__links {
+.header__links {
     list-style: none;
 
     li {
@@ -51,8 +46,8 @@ li, a, .btn {
         padding-left: 30px;
     }
 
-    li .btn {
-        background-color: #F6BF42;
+    li .header__btn {
+        background-color: var(--btndonacion);
         padding: 11px 42px;
         border-radius: 30px;
         cursor: pointer;
