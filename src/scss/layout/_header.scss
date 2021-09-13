@@ -13,7 +13,7 @@
     padding: 31px 80px 31px 90px;
 }
 
-li, a, .header__btn {
+.header__item, .header___link {
     @include fontStyle( var(--fontcolor), 16px);
     line-height: 18px;
     text-decoration: none;
@@ -24,7 +24,7 @@ li, a, .header__btn {
     align-items: center;
 }
 
-.header__logo img {
+.header__logo .header__image {
     margin-top: -3px;
     width: 41.2px;
     height: 44.47px;
@@ -41,12 +41,12 @@ li, a, .header__btn {
 .header__links {
     list-style: none;
 
-    li {
+    .header__item {
         display: inline-block;
         padding-left: 30px;
     }
 
-    li .header__btn {
+    .header__item .header__btn {
         background-color: var(--btndonacion);
         padding: 11px 42px;
         border-radius: 30px;
