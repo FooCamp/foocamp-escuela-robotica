@@ -1,0 +1,92 @@
+.lets-learn {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 3rem 5rem;
+    margin-top: 0;
+
+    @include breakpoint("lg") {
+        display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1;
+    }
+
+    &__sidebar {
+        grid-column: 1/2;
+
+        .sidebar__title {
+            @include fontStyle(var(--gray), 24px);
+            padding: 1.5rem 1.5rem 1.2rem;
+        }
+    }
+
+    &__container {
+        grid-column: 2/4;
+
+        .container__title {
+            @include fontStyle(var(--gray), 24px);
+            padding: 1.5rem 4.5rem 1.2rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4.75rem 2.5rem 4.75rem;
+        margin-left: 0;
+
+        @include breakpoint("lg") {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            grid-gap: 1.6rem;
+        }
+    }
+
+    &__card {
+        background: var(--white);
+        box-shadow: 0px 4px 4px var(--gray-shadow);
+        border-radius: 16px;
+        max-width: 410px;
+        min-height: 408px;
+        padding: 1.5rem 1.4rem 1.2rem;
+    
+        .card__video {
+            max-width: 364px;
+            min-height: 202px;
+            border-radius: 8px;
+        }
+
+        .card__title {
+            @include fontStyle(var(--waikawa-gray), 20px);
+            line-height: 24px;
+            padding-top: 1.25rem;
+        }
+
+        .card__description {
+            @include fontStyle(var(--gray), 16px);
+            line-height: 24px;
+            font-weight: normal;
+            padding-top: 1.4rem;
+        }
+
+        .card__footer {
+            display: flex;
+            align-items: center;
+            padding-top: 1.12rem;
+
+            .footer__link {
+                @include fontStyle(var(--dodger-blue), 14px);
+                line-height: 24px;
+                font-weight: normal;
+                padding-left: 1rem;
+            }
+
+            .footer__icon {
+                font-size: 32px;
+                color: var(--gray-nobel);
+            }
+        }
+    }
+}
