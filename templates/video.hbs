@@ -1,18 +1,20 @@
-<section class="container">
+<section class="container__video component">
     <div class="info-video__section">
 
-        <div class="paragraph">
-            <div class="paragraph_title">
-                <p>{{titleText}}</p>
+        <div class="info-video__paragraph">
+            <div class="paragraph__title">
+                <p class="paragraph__title--text">{{titleText}}</p>
             </div>
-            <div>
-                <p class="paragraph_text">{{paragraphText}}
+
+            <div class="paragraph__text
+                ">
+                <p class="paragraph__text--paragraph">{{paragraphText}}
                 </p>
             </div>
         </div>
 
         <div class="video-section"> 
-            <video  controls> 
+            <video class="video-section__content" controls> 
                 <source src={{assetSrc videoInfo}}  type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
