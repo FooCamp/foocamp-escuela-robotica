@@ -1,0 +1,7 @@
+%button { // pleasse use @extend %button to reuse these styles
+    background-color: var(--casablanca);
+    border-radius: 30px;  
+    cursor: pointer;
+    line-height: 18px;
+    border-style: none; 
+}
