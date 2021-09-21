@@ -1,6 +1,7 @@
 // Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
 // Base
 @import 'base/normalize';
@@ -14,4 +15,5 @@
 // Components
 @import 'components/component';
 @import 'components/allies-section';
+@import 'components/team-section';
 @import 'components/quoteSection';
