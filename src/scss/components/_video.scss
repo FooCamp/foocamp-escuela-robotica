@@ -21,12 +21,12 @@
 }
 
 .paragraph__title--text{
-    @include fontStyle_video(#577598, 24px, bold);
+    @include fontStyle_video(var(--waikawa-gray), 24px, bold);
     margin-bottom: 20px;
 }
 
 .paragraph__text--paragraph {
-    @include fontStyle_video(#8894B4, 24px, normal);
+    @include fontStyle_video(var(--cool-gray), 24px, normal);
     max-width: 518px;
 }
 
