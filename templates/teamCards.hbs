@@ -1,0 +1,14 @@
+<section class="team component">
+  <h2 class="team__heading">{{teamTitle}}</h2>
+  <section class="team__container">
+  {{#each teamCard}}
+    {{{module this}}}
+  {{/each}}
+    <article class="team__card team__card--centered-content">
+      <img class="team__image" src="{{assetSrc joinUsImg}}">
+      <p class="team__title">{{joinUsTitle}}</p>
+      <p class="team__description">{{joinUsCopy}}</p>
+      <a class="team__cta" href="#form">{{joinUsCta}}</a>
+    </article>
+  </section>
+</section>
