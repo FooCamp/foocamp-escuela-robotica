@@ -52,6 +52,12 @@
                 cursor: pointer;
             }
         }
+
+        #sidebar__categories {
+            @include fontStyle(var(--dodger-blue), 14px);
+            padding: 1.5rem 1.5rem 1.2rem;
+            cursor: pointer;
+        }
     }
 
     &__container {
