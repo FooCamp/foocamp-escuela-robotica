@@ -1,6 +1,8 @@
-export const initLetsLearnCategories = (selector) => {
+export const initLetsLearnCategories = () => {
     const elements = [...document.querySelectorAll(`[data-category]`)]
     const dataCategories = elements.map(element => element.getAttribute("data-category"));
+    const container = document.getElementById("sidebar__categories");
+    
     const categories = dataCategories.reduce((previousValue, currentValue) => {
         if (previousValue[currentValue]) {
             previousValue[currentValue] += 1
@@ -10,12 +12,32 @@ export const initLetsLearnCategories = (selector) => {
         return previousValue;
     }, {})
 
+    const allCategoriesElement = addCategoryItem("TODOS LOS VIDEOS", dataCategories.length);
+    container.appendChild(allCategoriesElement);
+
     Object.keys(categories).forEach((category) => {
-        console.log('key', category);
-        console.log('value', categories[category]);
+        const categoryItem = addCategoryItem(category, categories[category])
+        container.appendChild(categoryItem)
     });
+}
 
-    //const container = document.getElementById("categories");
+const addCategoryItem = (category, itemsCount) => {
+    const liElement = document.createElement('li');
+    liElement.innerText = `${category} (${itemsCount})`
+    liElement.setAttribute("category", category)
+    liElement.addEventListener("click", setFilterCategory)
+    return liElement;
+}
 
-    //const ul = document.createElement('ul');
+const setFilterCategory = (event) => {
+    const selectedCategory = event.target.getAttribute("category");
+    const elements = [...document.querySelectorAll(`[data-category]`)];
+    elements.forEach((cardElement) => {
+        const cardCategory = cardElement.getAttribute("data-category")
+        if (cardCategory === selectedCategory || selectedCategory === "TODOS LOS VIDEOS") {
+            cardElement.style.display = "block";
+        } else {
+            cardElement.style.display = "none";
+        }
+    })
 }
