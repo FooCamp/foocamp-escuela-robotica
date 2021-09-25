@@ -91,7 +91,7 @@
     }
     .image img {
         margin: 0px;
-        width: 100%;
+        width: 95%;
     }
     .container__form {
         margin: 60.26px 80px 99px 88px;
@@ -104,7 +104,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .container__info-form {
         width: 100%;
-        grid-template-columns: 350px auto;
+        grid-template-columns: 300px auto;
     }
     .info-form__paragraph {
         h1 {
