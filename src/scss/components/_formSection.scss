@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container__form {
+    margin: 60.26px 0px 99px 88px;
+}
+
+.container__info-form {
+    display: grid;
+    grid-template-columns: 518px auto;
+    grid-template-rows: auto;
+}
+
+.info-form__paragraph {
+    margin-bottom: 36px;
+    
+    h1 {
+        @include fontStyle (var(--waikawa-gray), 48px);
+        line-height: 55px;
+        }
+
+    p {
+        @include fontStyle (var(--cool-gray), 24px);
+        font-weight: normal;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.login-form { 
+    max-width: 410px;
+}
+
+.login-form .form-control {
+    background-color: var(--azalea-white);
+    border-radius: 16px;
+}
+
+.form-control {
+    margin-bottom: 24px;
+    padding: 19px 15px 18px 28px;
+    width: auto;
+    
+    input {
+        width: 100%;
+        @include fontStyle (var( --waikawa-gray), 20px);
+        background-color: var(--azalea-white);
+        font-weight: normal;
+        line-height: 23px;
+        border-style: none;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: #E7EAF0;
+        @include fontStyle (var( --waikawa-gray), 20px);
+        font-weight: normal;
+        line-height: 23px;
+        border-style: none;
+    }
+}
+
+.btn_form button {
+    cursor: pointer;
+    padding: 18px 113px;
+    border-style: none;
+    background-color: #2C8EFF;
+    @include fontStyle (var(--white), 20px);
+    border-radius: 30px;
+    line-height: 23px;
+}
+
+.image img {
+    opacity: 0.2;
+    max-width: 925px;
+    max-height: 510px;
+    margin-left: 25px;
+    margin-top: 91.26px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container__info-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        width: 100%;
+    }
+    .image img {
+        margin: 0px;
+        width: 100%;
+    }
+    .container__form {
+        margin: 60.26px 80px 99px 88px;
+    }
+    .info-form__paragraph {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container__info-form {
+        width: 100%;
+        grid-template-columns: 350px auto;
+    }
+    .info-form__paragraph {
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+    .form-control {
+        padding: 5%;
+        input, textarea {
+            font-size: 15px;
+        }
+    }
+    .btn_form button {
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+}
