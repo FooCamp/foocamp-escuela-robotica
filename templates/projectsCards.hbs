@@ -1,0 +1,9 @@
+<section class="projects component">
+    <h2 class="projects__heading">{{projectsTitle}}</h2>
+    <p class="projects__heading projects__heading--small-text">{{sort}}</p>
+    <section class="projects__container">
+          {{#each projectsCards}}
+          {{{module this}}}
+          {{/each}}
+    </section>
+</section>
