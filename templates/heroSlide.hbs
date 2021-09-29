@@ -1,11 +1,28 @@
-<div  class="slider component">
-  <div class="slider__content">
-    <h2 class="slider__title">{{title}}</h2>
-    <p class="slider__paragraph">{{description}}</p>
+<div class="carousel component">
+  <div class="slider">
+    <div class="slider__component">
+      <div class="slider__content">
+        <h2 class="slider__title">{{title}}</h2>
+        <p class="slider__paragraph">{{description}}</p>
+      </div>
+      <div class="slider__img">
+        <img class="slider__image" src="{{{assetSrc image}}}" alt="{{altText}}">
+      </div>
+    </div>  
+     <div class="slider__component">
+      <div class="slider__content">
+        <h2 class="slider__title">{{title}}</h2>
+        <p class="slider__paragraph">{{description}}</p>
+      </div>
+      <div class="slider__img">
+        <img class="slider__image" src="{{{assetSrc image}}}" alt="{{altText}}">
+      </div>
+    </div>
+   
   </div>
-  <div class="slider__img">
-    <img class="slider__image" src="{{{assetSrc image}}}" alt="{{altText}}">
+  <div class="dots-list">
+    <button class="dot-button active"></button>
+    <button class="dot-button"></button>
   </div>
-  
 </div>
 
