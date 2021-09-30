@@ -1,0 +1,21 @@
+.document{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    
+    &__icon{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 20px;
+        margin-right: 14px;
+    }
+
+    &__link{
+        @include fontStyle(var(--fontcolor),20px);
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+}
+
+
+

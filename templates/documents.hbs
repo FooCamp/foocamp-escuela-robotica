@@ -1,12 +1,7 @@
-<div class="documents">
-
-<ul>
-  {{#each documents}}
-  <li>
-      <img src="" alt="">
-      <a href=""></a>
-    </li>
-  {{/each}}
-</ul>
-
+<div class="documents component">
+  <ul>
+    {{#each documents}}
+      {{{module this}}}
+    {{/each}}
+  </ul>
 </div>
