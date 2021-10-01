@@ -1,65 +1,62 @@
-.carousel {
+.carousel{
   overflow: hidden;
-  
-}
-.slider{
-  display: flex;
-  flex-wrap: nowrap;
-  transition: .7s ease;
-  
-  &__img{
+  .slider{
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
+    flex-wrap: nowrap;
+    transition: .7s ease;
+    &__component{
+      width: 100%;
+      flex-shrink: 0;
+    }
+    &__content{
+      position: absolute;
+      width: 50%;
+      top: 118px;
+      margin-left: 80px;
+    }
+    &__title{
+      font-size: 48px;
+      color: var(--bluetitle) ;
+      padding-right: 110px;
+      line-height: 55px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: bold;
+    }
+    &__paragraph{
+      color: var(--bluetext) ;
+      font-size: 30px;
+      line-height: 34px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+    }
+    &__img{
+      display: flex;
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    &__image{
+      border-radius: 250px 0 0 250px;
+      width: 925px;
+      height: 500px;
+      opacity: 0.3;
+    }
   }
-  
-  &__image{
-    border-radius: 250px 0 0 250px;
-    width: 925px;
-    height: 500px;
-    opacity: 0.3;
-  }
-  &__component{
-    width: 100%;
-    flex-shrink: 0;
-  }
-  &__content{
+  .dots-list{
     position: absolute;
-    max-width: 48%;
-    top: 118px;
-    margin-left: 80px;
-  }
-  &__title{
-    font-size: 48px;
-    color: var(--bluetitle) ;
-    padding-right: 110px;
-    line-height: 55px;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-  }
-  &__paragraph{
-    color: var(--bluetext) ;
-    font-size: 30px;
-    line-height: 34px;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-}
-.dots-list{
-  position: absolute;
     top: 350px;
     left: 80px;
-}
-.dot-button {
-  border-radius: 50%;
-  padding: 6px;
-  cursor: pointer;
-  border: 0;
-  margin-right: 12px;
-}
-.active {
-  background-color: var(--gray);
+    .dot-button{
+      border-radius: 50%;
+      padding: 6px;
+      cursor: pointer;
+      border: 0;
+      margin-right: 12px;
+    }
+    .active {
+      background-color: var(--gray);
+    }
+  }
+
 }
