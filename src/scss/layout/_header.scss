@@ -48,9 +48,13 @@
 
     .header__item .header__btn {
         background-color: var(--btndonacion);
-        padding: 11px 42px;
+        padding: 6px 20px;
         border-radius: 30px;
         cursor: pointer;
         border: var(--white);
+
+        @include breakpoint("md") {
+            padding: 11px 42px;
+        }
     }
 }
