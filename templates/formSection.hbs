@@ -1,0 +1,39 @@
+<section class="container__form">
+
+    <div class="container__info-form  component"> 
+
+        <div class="info-form">
+            <div class="info-form__paragraph">
+                <h1>{{titleText}}</h1>
+                <p>{{infoParagraph}}</p>
+            </div>
+
+            <div class="login-form">
+                <form action="/login" method="post">
+
+                    <div class="form-control">
+                        <input type="text" name="nombre" placeholder="Nombre "  required />
+                    </div>
+
+                    <div class="form-control">   
+                        <input type="email" name="correo" placeholder="Correo"  required />
+                    </div>
+
+                    <div class="form-control">   
+                        <textarea name="mensaje" id="mensaje" maxlength="200" cols="3" rows="5" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="btn_form">
+                        <a href="#"><button type="submit">Enviar</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="image"> 
+            <img src="{{assetSrc imageForm}}" alt="">
+        </div>
+
+    </div>
+
+</section>
