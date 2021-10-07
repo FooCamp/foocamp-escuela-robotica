@@ -3,13 +3,11 @@
             <img class="header__image" src={{assetSrc robot}} alt="">
             <p>{{item1_header}}</p>
         </div>
-
         <nav>
             <ul class="header__links">
-                <li class="header__item"><a class="header__link" href="#">NUESTRO TRABAJO</a></li>
-                <li class="header__item"><a class="header__link" href="#">APRENDAMOS</a></li>
-                <li class="header__item"><a class="header__link" href="#">DOCUMENTOS</a></li>
-                <li class="header__item"><a class="header__link header__btn" href="#">DONACIONES</a></li>
+            {{#each navLinks}}
+                {{{module this}}}
+            {{/each}}
             </ul>
         </nav>
     </header>
