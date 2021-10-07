@@ -18,13 +18,19 @@
             </div>
             <div class="footer__section">
                 <h2 class="footer__subtitles">{{discoverWithUsTitle}}</h2>
-                <a href="#" class="footer__links">{{ourWorkLink}}</a>
-                <a href="#" class="footer__links">{{learnLink}}</a>
-                <a href="#" class="footer__links">{{documentsLink}}</a>
+                <ul class="footer__links">
+                    {{#each footerLinks}}
+                        {{{module this}}}
+                    {{/each}}
+                </ul>
             </div>
             <div class="footer__section">
                 <h2 class="footer__subtitles">{{discoverHowToSupport}}</h2>
-                <a class="footer__button" href="#">{{donationsButton}}</a>
+                <ul class="footer__button">
+                    {{#each donationsButton}}
+                        {{{module this}}}
+                    {{/each}}
+                </ul>
                 <div class="footer__section__links">
                     <a href="#" class="footer__links footer__links--row">
                         <div class="footer__image">

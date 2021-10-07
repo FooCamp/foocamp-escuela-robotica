@@ -1,0 +1,113 @@
+.container__form {
+    margin: 60.26px 0 99px 88px;
+}
+
+.container__info-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+
+    @include breakpoint('xl'){
+        grid-template-columns: 518px auto;
+        grid-gap: 40px;
+    }
+}
+
+.info-form__paragraph { 
+    margin-bottom: 36px;
+        
+    h1 {
+        @include fontStyle (var(--waikawa-gray), 29px);
+        line-height: 55px;
+    }
+
+    p {
+        @include fontStyle (var(--cool-gray), 18px);
+        font-weight: normal;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        width: 85%;
+        text-align: justify;
+    }
+
+    @include breakpoint('lg') {
+        text-align: left;
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 24px;
+            width: auto;
+            text-align: left;
+        }
+    }
+}
+
+.login-form { 
+    max-width: 410px;
+}
+
+.login-form .form-control {
+    background-color: var(--azalea-white);
+    border-radius: 16px;
+}
+
+.form-control {
+    margin-bottom: 24px;
+    padding: 19px 15px 18px 28px;
+    width: auto;
+    
+    input {
+        width: 100%;
+        @include fontStyle (var( --waikawa-gray), 14px);
+        background-color: var(--azalea-white);
+        font-weight: normal;
+        line-height: 23px;
+        border-style: none;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: #E7EAF0;
+        @include fontStyle (var( --waikawa-gray), 14px);
+        font-weight: normal;
+        line-height: 23px;
+        border-style: none;
+    }
+
+    @include breakpoint('lg') {
+        input, textarea {
+            font-size: 20px;
+        }
+    }
+}
+
+.btn_form button {
+    cursor: pointer;
+    padding: 10px 50px;
+    border-style: none;
+    background-color: #2C8EFF;
+    @include fontStyle (var(--white), 13px);
+    border-radius: 30px;
+    line-height: 23px;
+
+    @include breakpoint('lg') {
+        font-size: 20px;
+        padding: 18px 113px;
+    }
+}
+
+.image img {
+    margin: 0px;
+    opacity: 0.2;
+    margin-top: 20px;
+
+    @include breakpoint('md'){
+        max-width: 925px;
+        max-height: 510px;
+        margin-left: 25px;
+        margin-top: 91.26px;
+    }
+}
