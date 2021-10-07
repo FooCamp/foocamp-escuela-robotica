@@ -47,6 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;
+    align-items: center;
 
     @include breakpoint("md") {
         flex-direction: row;
@@ -60,17 +61,18 @@
         @include breakpoint("md") {
             margin-bottom: 0;
         }
-    }
 
-    .header__item .header__btn {
-        background-color: var(--btndonacion);
-        padding: 6px 20px;
-        border-radius: 30px;
-        cursor: pointer;
-        border: var(--white);
-            
-        @include breakpoint("md") {
-            padding: 11px 42px;
+        &:last-of-type {
+            background-color: var(--btndonacion);
+            padding: 6px 11px;
+            border-radius: 30px;
+            cursor: pointer;
+            border: var(--white);
+            margin-left: 16px;
+
+            @include breakpoint("md") {
+                padding: 11px 42px;
+            }
         }
     }
 }
