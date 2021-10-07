@@ -1,4 +1,4 @@
 import '../scss/main.scss';
 
-console.log("Hello, Webpack!");
-
+import { initCarousel } from '../js/carousel';
+initCarousel();
