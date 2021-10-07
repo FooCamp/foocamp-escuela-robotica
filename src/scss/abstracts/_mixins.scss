@@ -29,3 +29,12 @@ $breakpoints: (
   font-weight: bold;
 }
 
+@mixin  fontStyle_video ($color, $fontSize, $fontWeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 28px;
+  font-family: Helvetica;
+  font-style: normal;
+}
+
