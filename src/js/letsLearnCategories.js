@@ -28,7 +28,6 @@ export const initLetsLearnCategories = () => {
         containerSidebar.appendChild(sidebarItem)
         containerDropdown.appendChild(optionItem)
     });
-}
 
     containerDropdown.addEventListener("change", selectedDropdownItem);
 }
