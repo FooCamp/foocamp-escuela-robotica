@@ -7,16 +7,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 100%;
-    
+
     @include breakpoint('xl'){
         grid-template-columns: 518px auto;
         grid-gap: 40px;
     }
-    
-    /*
-    @include breakpoint('lg'){
-        518
-    }*/
 }
 
 .info-form__paragraph { 
@@ -107,7 +102,8 @@
 .image img {
     margin: 0px;
     opacity: 0.2;
-    
+    margin-top: 20px;
+
     @include breakpoint('md'){
         max-width: 925px;
         max-height: 510px;
@@ -115,49 +111,3 @@
         margin-top: 91.26px;
     }
 }
-
-/*
-@media (min-width: 576px) and (max-width: 768px) {
-    .container__info-form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 40px;
-        width: 100%;
-    }
-    .image img {
-        margin: 0px;
-        width: 95%;
-    }
-    .container__form {
-        margin: 60.26px 80px 99px 88px;
-    }
-    .info-form__paragraph {
-        text-align: justify;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .container__info-form {
-        width: 100%;
-        grid-template-columns: 300px auto;
-    }
-    .info-form__paragraph {
-        h1 {
-            font-size: 30px;
-        }
-        p {
-            font-size: 17px;
-        }
-    }
-    .form-control {
-        padding: 5%;
-        input, textarea {
-            font-size: 15px;
-        }
-    }
-    .btn_form button {
-        font-size: 15px;
-        padding: 10px 50px;
-    }
-}
-*/
