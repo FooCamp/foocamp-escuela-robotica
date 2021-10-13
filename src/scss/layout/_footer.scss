@@ -68,24 +68,39 @@
         margin: 5px 3px;
         line-height: 16px;
         margin-bottom: 25px;
+
+        > li:first-of-type {
+            margin-top: 28px;
+        }
+
+        > li {
+            margin-bottom: 20px;
+        }
+    
+        > li > a {
+            @include fontStyle(var(--white),14px);
+        }
     }
 
     &__button{
-        @include fontStyle(var(--button_content),16px);
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        width: max-content;
-        padding: 12px 24px;       
-        background-color: var(--footer_button);
-        border-radius: 60px;
-        border-style: none;
-        margin-bottom: 44px;
-        margin-right: 18px; 
 
-        @include breakpoint("lg"){
-            @include fontStyle(var(--button_content),24px);
-            padding: 16px 64px;
+        > li > a {
+            @include fontStyle(var(--button_content),16px);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: max-content;
+            padding: 12px 24px;       
+            background-color: var(--footer_button);
+            border-radius: 60px;
+            border-style: none;
+            margin-bottom: 44px;
+            margin-right: 18px; 
+
+            @include breakpoint("lg"){
+                @include fontStyle(var(--button_content),24px);
+                padding: 16px 64px;
+            }
         }
     }
 
