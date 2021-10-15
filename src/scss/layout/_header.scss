@@ -16,12 +16,6 @@
     }
 }
 
-.header__item, .header___link {
-    @include fontStyle( var(--fontcolor), 16px);
-    line-height: 18px;
-    text-decoration: none;
-}
-
 .header__logo {
     display: flex;
     align-items: center;
@@ -50,24 +44,28 @@
 }
 
 .header__links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 30px;
-    align-items: center;
+    display: none;
 
     @include breakpoint("md") {
+        display: flex;
+        list-style: none;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 10px;
     }
 
-    .header__item {
-        padding-left: 30px;
-        margin-bottom: 10px;
+    > .list__item {
+        @include fontStyle( var(--fontcolor), 12px);
+        white-space: nowrap;
+        margin-left: 16px;
+        line-height: 18.4px;
+        text-decoration: none;
 
-        @include breakpoint("md") {
-            margin-bottom: 0;
+        @include breakpoint("lg") {
+            margin-left: 30px;
+            @include fontStyle( var(--fontcolor), 16px);
         }
 
         &:last-of-type {
@@ -76,15 +74,68 @@
             border-radius: 30px;
             cursor: pointer;
             border: var(--white);
-            margin-left: 16px;
 
-            @include breakpoint("md") {
+            @include breakpoint("lg") {
                 padding: 11px 42px;
             }
         }
     }
 }
 
-.header__link {
-    white-space: nowrap;
+.icon {
+    color: var(--fontcolor);
+    font-size: 44px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+
+    @include breakpoint("md") {
+        display: none;
+    }
+}
+
+.header__close-icon {
+    right: 15%;
+    top: 5%;
+}
+
+.header__mobile-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+    text-align: center;
+
+    @include breakpoint("md") {
+        display: none;
+    }
+}
+
+.header__mobile-menu.open {
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.header__mobile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+
+    .list__item {
+        @include fontStyle( var(--fontcolor), 16px);
+        margin-top: 60px;
+        line-height: 18.4px; 
+        
+        &:first-of-type {
+            margin-top: 80px;
+        }
+    }
 }
