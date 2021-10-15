@@ -27,6 +27,14 @@
     align-items: center;
 }
 
+.header__title {
+    max-width: 120px;
+
+    @include breakpoint("lg") {
+        max-width: 100%;
+    }
+}
+
 .header__logo .header__image {
     margin-top: -3px;
     width: 41.2px;
@@ -75,4 +83,8 @@
             }
         }
     }
+}
+
+.header__link {
+    white-space: nowrap;
 }
