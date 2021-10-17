@@ -1,4 +1,9 @@
 export const initCarousel = () => {
+
+  if (!document.querySelector(".carousel")) {
+    return;
+  };
+
   const $carousel = document.querySelector(".carousel");
   const $slider = $carousel.querySelector(".slider");
   const $dotsContainer = $carousel.querySelector(".dots-list");

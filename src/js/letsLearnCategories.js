@@ -4,6 +4,10 @@ export const initLetsLearnCategories = () => {
     const containerSidebar = document.getElementById("sidebar__categories");
     const containerDropdown = document.getElementById("sidebar__dropdown");
     
+    if (!containerSidebar || !containerDropdown) {
+        return;
+    };
+
     const categories = dataCategories.reduce((previousValue, currentValue) => {
         if (previousValue[currentValue]) {
             previousValue[currentValue] += 1
