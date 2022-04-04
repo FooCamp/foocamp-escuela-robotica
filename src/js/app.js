@@ -1,7 +1,8 @@
 import '../scss/main.scss';
+import { handleBurgerMenu } from './handleBurgerMenu';
+import { initCarousel } from '../js/carousel';
 import { initLetsLearnCategories } from './letsLearnCategories';
 
-initLetsLearnCategories('#letsLearnCategories');
-
-import { initCarousel } from '../js/carousel';
+handleBurgerMenu();
 initCarousel();
+initLetsLearnCategories('#letsLearnCategories');

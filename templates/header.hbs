@@ -6,10 +6,21 @@
         <nav>
             <ul class="header__links">
             {{#each navLinks}}
-                <span class="header__item">
                 {{{module this}}}
-                </span>
             {{/each}}
+            {{{module donationsButton}}}
             </ul>
+            <div>
+                <span class="icon header__burger-icon">☰</span>
+            </div>
         </nav>
+        <div class="header__mobile-menu">
+            <ul class="header__mobile-links">
+                {{#each navLinks}}
+                    {{{module this}}}
+                {{/each}}
+                {{{module donationsButton}}}
+            </ul>
+            <span class="icon header__close-icon">✕</span>
+        </div>
     </header>
