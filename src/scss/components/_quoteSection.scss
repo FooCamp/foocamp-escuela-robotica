@@ -4,23 +4,40 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 40px;
+
     
     &__text{
-        @include fontStyle(var(--quote_text),24px);
+        @include fontStyle(var(--quote_text), 16px);
         line-height: 28px;
         display: flex;
         margin-top: 47px;
-        text-align: center;
-        width: 736px;
-        height: 68px;
+
+        @include breakpoint("md") {
+            font-size: 20px;
+        }
+
+        @include breakpoint("lg") {
+            font-size: 24px;
+            width: 736px;
+            height: 68px;
+        }
     }
 
     &__author{
-        @include fontStyle(var(--quote_author),20px);
-        font-size: 20px;
+        @include fontStyle(var(--quote_author), 12px);
         line-height: 23px;
         margin-top:24px;
         margin-bottom: 39px;
+
+        @include breakpoint("md") {
+            font-size: 16px;
+        }
+
+        @include breakpoint("lg") {
+            font-size: 20px;
+        }
     }
 }
- 
